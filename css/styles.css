@@ -1,0 +1,180 @@
+﻿/* Configurações Gerais da Página */
+
+* { 
+	margin: 0; 
+	padding: 0 ;
+	font-size: 100%; 
+	font-family: 'Montserrat', sans-serif;
+}
+
+nav, ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+	opacity: 0.9;
+}
+a:hover {
+	opacity: 1;
+}
+
+
+
+/* Header do Body*/
+header { 
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	/*padding: 30px 50px;*/
+	
+}
+
+header nav{
+	display: flex;
+}
+
+/*Hero do Header*/
+
+.hero{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px 50px;
+}
+
+.hero,.hero2 p{
+	font-size: 1.2rem;
+}
+
+/*Hero do Header2*/
+
+.hero2{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px 50px;
+}
+
+@media(max-width: 850){
+	.hero{
+		padding: 30px 20px;
+	}
+	.hero2{
+		padding: 30px 20px;
+	}
+}
+
+.conheca-o-brasil{
+	display: flex;
+	flex-direction: column !important;
+	align-items: center;
+	padding: 85px 40px;
+}
+
+.conheca-o-brasil .grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.conheca-o-brasil .grid li{
+
+	height: 250px; 
+	padding: 10px;
+	border-radius: 3px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+}
+
+.conheca-o-brasil .grid li.medium{
+	flex-basis: 30%;
+	border-radius: 15px;
+}
+
+.conheca-o-mundo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0px 40px;
+}
+
+.conheca-o-mundo .grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.conheca-o-mundo .grid li{
+	height: 250px; 
+	padding: 10px;
+	border-radius: 5px;
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+}
+
+.conheca-o-mundo .grid li.medium{
+	flex-basis: 30%;
+	border-radius: 25px;
+}
+
+@media (max-width: 850){
+	.conheca-o-brasil{
+		padding: 85px 10px;
+	}
+	.conheca-o-mundo{
+		padding: 0px 10px;
+	}
+	.conheca-o-brasil .grid li.medium{
+		flex-basis: 100% !important;
+	}
+	.conheca-o-mundo .grid li.medium{
+		flex-basis: 100%;	
+	}
+}
+
+.conheca-o-brasil .grid li#cidade{
+
+}
+
+.conheca-o-brasil .grid li#valor{
+
+}
+
+
+#informes{
+	widows: 100%;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 180px 20px;
+	align-items: center;
+}
+
+#informes nav h1{
+	font-size: 1.2rem;
+	margin-bottom: 15px;
+}
+#informes nav h3{
+	font-size: 0.7rem;
+
+}
+
+.alinhamento{
+	text-align: right;
+}
+
+.nav-qb{
+	width: 65%;
+}
+
+@media(max-width: 1100){
+	* {
+		font-size: 80%; 
+	}
+}
